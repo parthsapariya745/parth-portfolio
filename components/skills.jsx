@@ -95,7 +95,6 @@ export default function Skills() {
 
               {/* Skill Row */}
               <div className="grid grid-cols-7 gap-6">
-
                 {category.skills.map((skill, i) => (
                   <div
                     key={i}

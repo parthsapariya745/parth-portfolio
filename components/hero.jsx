@@ -1,5 +1,4 @@
 "use client";
-import { Code2 } from "lucide-react";
 import { FaArrowRight } from "react-icons/fa";
 import themeContext from "./CreateContext";
 import { useContext, useEffect, useRef } from "react";
@@ -160,26 +159,20 @@ export default function Hero() {
 
           {/* Right Side Graphic */}
           <div className="flex items-center justify-center">
-            <div
+            <img
+              src="./myImage.jpeg"
               className="
-                sm:w-72 w-full h-72 rounded-2xl relative flex items-center justify-center
-                bg-linear-to-br from-indigo-500/20 to-purple-500/20
-                backdrop-blur-xl shadow-xl border border-white/10
-                transition-transform duration-500
-                hover:scale-[1.05] hover:rotate-[1.5deg]
+                object-cover h-[400px] w-[400px] rounded-full
+                border-4 border-transparent
+                bg-clip-padding
+                shadow-xl
+                hover:shadow-[0_0_30px_rgba(255,255,255,0.35)]
+                hover:scale-[1.02] transition-all duration-500
+                bg-linear-to-br from-indigo-500/30 to-purple-500/30
+                p-1
               "
-            >
-              <div
-                className="
-                  absolute inset-0 bg-linear-to-t
-                  from-indigo-400/10 to-transparent
-                "
-              />
-              <Code2
-                size={130}
-                className="text-indigo-500/50 drop-shadow-[0_0_20px_rgba(99,102,241,0.35)]"
-              />
-            </div>
+              alt="my-image"
+            />
           </div>
         </div>
       </div>
