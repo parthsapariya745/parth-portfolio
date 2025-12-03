@@ -162,7 +162,7 @@ export default function Hero() {
             <img
               src="./myImage.jpeg"
               className="
-                object-cover h-[400px] w-[400px] rounded-full
+                object-cover lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] sm:h-[400px] sm:w-[400px] h-[260px] w-[260px] rounded-full
                 border-4 border-transparent
                 bg-clip-padding
                 shadow-xl
