@@ -89,13 +89,13 @@ export default function Skills() {
             <div key={index} className={`animate-[fadeUp_1s_ease-out_${index * 0.15}s_both]`}>
 
               {/* Category Title */}
-              <h3 className={`text-2xl font-semibold mb-4 ${theme === "dark" ? "text-indigo-300" : "text-purple-700"}`}>
+              <h3 className={`text-2xl text-center font-semibold mb-4 ${theme === "dark" ? "text-indigo-300" : "text-purple-700"}`}>
                 {category.category}
               </h3>
 
               {/* Skill Row */}
-              <div className="grid grid-cols-7 gap-6">
-                {category.skills.map((skill, i) => (
+              <div className="flex flex-wrap justify-center gap-6">
+                {category.skills.map((skill, i) => (  
                   <div
                     key={i}
                     className={`
