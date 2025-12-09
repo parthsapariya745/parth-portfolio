@@ -165,9 +165,8 @@ export default function Hero() {
                 object-cover lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] sm:h-[400px] sm:w-[400px] h-[260px] w-[260px] rounded-full
                 border-4 border-transparent
                 bg-clip-padding
-                shadow-xl
-                hover:shadow-[0_0_30px_rgba(255,255,255,0.35)]
-                hover:scale-[1.02] transition-all duration-500
+                shadow-[0_0_35px_rgba(255,255,255,0.35)]
+                scale-[1.02] transition-all duration-500
                 bg-linear-to-br from-indigo-500/30 to-purple-500/30
                 p-1
               "

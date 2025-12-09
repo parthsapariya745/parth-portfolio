@@ -8,14 +8,14 @@ const education = [
     year: "10th Grade",
     title: "10th Standard",
     institution: "Sarvodaya School",
-    achievement: "86% PR",
+    achievement: "86PR",
   },
   {
     id: 2,
     year: "12th Grade",
     title: "12th Standard (Commerce)",
     institution: "Sarvodaya Commerce School",
-    achievement: "82% PR",
+    achievement: "82PR",
   },
   {
     id: 3,
