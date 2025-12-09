@@ -20,7 +20,7 @@ const projects = [
     title: "Adminpanel",
     description:
       "A responsive Admin Panel using React, HTML, and CSS with React Router for smooth navigation and a clean UI.",
-    tech: ["HTML", "CSS", "JavaScript", "React JS", "react-router-dom"],
+    tech: ["HTML", "CSS", "JavaScript", "React JS", "react-router-dom", "nodeJS", "MongoDB Compass"],
     demo: "https://react-router-dom-login-signup.netlify.app/",
     source: "https://github.com/parthsapariya745/login-singup-react-router-dom",
     imgPath: "/adminpanel.png",
