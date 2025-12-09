@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import VanillaTilt from "vanilla-tilt";
 
 export default function RootLayout({ children }) {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("dark")
 
   return (
     <html lang="en">
