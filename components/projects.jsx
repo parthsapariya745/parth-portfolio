@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Adminpanel",
     description:
-      "A responsive Admin Panel using React, HTML, and CSS with React Router for smooth navigation and a clean UI.",
+      "Admin Panel with product CRUD functionality offering smooth management and a clean, responsive UI.",
     tech: ["HTML", "CSS", "JavaScript", "React JS", "react-router-dom", "nodeJS", "MongoDB Compass"],
     demo: "https://react-router-dom-login-signup.netlify.app/",
     source: "https://github.com/parthsapariya745/login-singup-react-router-dom",
@@ -44,6 +44,16 @@ const projects = [
     demo: "https://number-guessing-game-react-js.netlify.app/",
     source: "https://github.com/parthsapariya745/Number-Guessing-game",
     imgPath: "/guessing-number.png",
+  },
+  {
+    id: 5,
+    title: "Quiz App",
+    description:
+      "A modern and responsive Quiz App built with React, Tailwind CSS, and React Router, featuring a clean UI and a limited-time quiz mechanism for an engaging user experience.",
+    tech: ["Tailwind CSS", "JavaScript", "React JS", "react-router-dom"],
+    demo: "https://quiz-master-07.netlify.app/",
+    source: "https://github.com/parthsapariya745/Quiz-Master",
+    imgPath: "/quiz-app.png",
   },
 ];
 
