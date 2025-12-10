@@ -86,8 +86,7 @@ export default function Skills() {
         <div className="space-y-14">
 
           {skillCategories.map((category, index) => (
-            <div key={index} className={`animate-[fadeUp_1s_ease-out_${index * 0.15}s_both]`}>
-
+            <div key={index}>
               {/* Category Title */}
               <h3 className={`text-2xl text-center font-semibold mb-4 ${theme === "dark" ? "text-indigo-300" : "text-purple-700"}`}>
                 {category.category}
@@ -99,17 +98,16 @@ export default function Skills() {
                   <div
                     key={i}
                     className={`
-                      your-element
                       flex flex-col items-center justify-center
                       w-32 h-36 gap-2 p-4 rounded-xl
                       backdrop-blur-xl border transition-all duration-300
+                      hover:scale-[1.13]
                       ${
                         theme === "dark"
-                          ? "bg-white/5 border-white/10 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]"
+                          ? "bg-white/5 border-white/10 hover:shadow-[0_0_20px_rgba(52,21,57,0.8)]"
                           : "bg-white border-black/10 hover:shadow-xl"
                       }
                     `}
-                    data-tilt
                   >
                     {/* Icon */}
                     <Image
