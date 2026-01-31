@@ -14,24 +14,24 @@ const skillCategories = [
       { name: "React JS", level: "Advanced", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" },
       { name: "Bootstrap", level: "Intermediate", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" },
       { name: "Next JS", level: "Basic", icon: "https://logo.svgcdn.com/devicon-plain/nextjs-plain.png" },
-      { name: "Typescript", level: "Basic", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" }
     ],
   },
-
+  
   {
     category: "Backend",
     skills: [
+      { name: "Node JS", level: "Advanced", icon: "https://www.etatvasoft.com/public/images/nodejs-main-logo-hexa.svg" },
       { name: "C", level: "Advanced", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1086px-C_Programming_Language.svg.png" },
       { name: "C++ With DSA", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" },
-      { name: "Node JS", level: "Basic", icon: "https://www.etatvasoft.com/public/images/nodejs-main-logo-hexa.svg" },
+      { name: "Typescript", level: "Basic", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" }
     ],
   },
 
   {
     category: "Database",
     skills: [
+      { name: "Mongo DB", level: "Advanced", icon: "https://cdn.iconscout.com/icon/free/png-256/free-mongodb-logo-icon-svg-download-png-3030245.png" },
       { name: "Firebase", level: "Intermediate", icon: "https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/google-firebase-logo-icon-hd.png" },
-      { name: "Mongo DB", level: "Basic", icon: "https://cdn.iconscout.com/icon/free/png-256/free-mongodb-logo-icon-svg-download-png-3030245.png" },
       { name: "Supabase DB", level: "Basic", icon: "https://img.icons8.com/color/512/supabase.png" },
     ],
   },
@@ -88,12 +88,12 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <div key={index}>
               {/* Category Title */}
-              <h3 className={`text-2xl text-center font-semibold mb-4 ${theme === "dark" ? "text-indigo-300" : "text-purple-700"}`}>
+              <h3 className={`text-2xl font-semibold mb-4 ${theme === "dark" ? "text-indigo-300" : "text-purple-700"}`}>
                 {category.category}
               </h3>
 
               {/* Skill Row */}
-              <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex flex-wrap gap-6">
                 {category.skills.map((skill, i) => (  
                   <div
                     key={i}

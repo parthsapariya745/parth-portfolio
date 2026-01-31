@@ -7,23 +7,23 @@ import { FiExternalLink } from "react-icons/fi";
 const projects = [
   {
     id: 1,
-    title: "Myntra Clone",
+    title: "Expense Income tracker",
     description:
-      "A responsive Myntra clone built using JavaScript, featuring dynamic product display and a functional cart using localStorage.",
-    tech: ["Tailwind CSS", "JavaScript"],
-    demo: "https://m-y-n-t-r-a-group-project-js.netlify.app/",
-    source: "https://github.com/parthsapariya745/Myntra_Clone_JS",
-    imgPath: "/project-myntra.png",
+      "A fun number guessing game with responsive design and dynamic scoring based on odd–even rules.",
+    tech: ["Tailwind CSS", "JavaScript", "React JS", "Node JS", "MongoDB Atlas"],
+    demo: "https://expense-income-tracker-client.pages.dev",
+    source: "https://github.com/parthsapariya745/Expense_Income_Tracker_client",
+    imgPath: "/expense-income-tracker.png",
   },
   {
     id: 2,
-    title: "Adminpanel",
+    title: "Number Guessing Game",
     description:
-      "Admin Panel with product CRUD functionality offering smooth management and a clean, responsive UI.",
-    tech: ["HTML", "CSS", "JavaScript", "React JS", "react-router-dom", "nodeJS", "MongoDB Compass"],
-    demo: "https://react-router-dom-login-signup.netlify.app/",
-    source: "https://github.com/parthsapariya745/login-singup-react-router-dom",
-    imgPath: "/adminpanel.png",
+      "A fun number guessing game with responsive design and dynamic scoring based on odd–even rules.",
+    tech: ["Tailwind CSS", "JavaScript", "React JS"],
+    demo: "https://number-guessing-game-react-js.netlify.app",
+    source: "https://github.com/parthsapariya745/Number-Guessing-game",
+    imgPath: "/guessing-number.png",
   },
   {
     id: 3,
@@ -31,29 +31,39 @@ const projects = [
     description:
       "A clean weather app with real-time weather API integration, animated UI, and responsive layout.",
     tech: ["HTML", "CSS", "JavaScript", "Weather API"],
-    demo: "https://parth-js-weatherapp.netlify.app/",
+    demo: "https://parth-js-weatherapp.netlify.app",
     source: "https://github.com/parthsapariya745/Parth_JS_WeatherApp",
     imgPath: "/weather-app.png",
   },
   {
     id: 4,
-    title: "Number Guessing Game",
-    description:
-      "A fun number guessing game with responsive design and dynamic scoring based on odd–even rules.",
-    tech: ["Tailwind CSS", "JavaScript", "React JS"],
-    demo: "https://number-guessing-game-react-js.netlify.app/",
-    source: "https://github.com/parthsapariya745/Number-Guessing-game",
-    imgPath: "/guessing-number.png",
-  },
-  {
-    id: 5,
     title: "Quiz App",
     description:
       "A modern and responsive Quiz App built with React, Tailwind CSS, and React Router, featuring a clean UI and a limited-time quiz mechanism for an engaging user experience.",
     tech: ["Tailwind CSS", "JavaScript", "React JS", "react-router-dom"],
-    demo: "https://quiz-master-07.netlify.app/",
+    demo: "https://quiz-master-07.netlify.app",
     source: "https://github.com/parthsapariya745/Quiz-Master",
     imgPath: "/quiz-app.png",
+  },
+  {
+    id: 5,
+    title: "Myntra Clone",
+    description:
+      "A responsive Myntra clone built using JavaScript, featuring dynamic product display and a functional cart using localStorage.",
+    tech: ["Tailwind CSS", "JavaScript"],
+    demo: "https://m-y-n-t-r-a-group-project-js.netlify.app",
+    source: "https://github.com/parthsapariya745/Myntra_Clone_JS",
+    imgPath: "/project-myntra.png",
+  },
+  {
+    id: 6,
+    title: "Adminpanel",
+    description:
+      "Admin Panel with product CRUD functionality offering smooth management and a clean, responsive UI.",
+    tech: ["HTML", "CSS", "JavaScript", "React JS", "react-router-dom", "nodeJS", "MongoDB Compass"],
+    demo: "https://react-router-dom-login-signup.netlify.app",
+    source: "https://github.com/parthsapariya745/login-singup-react-router-dom",
+    imgPath: "/adminpanel.png",
   },
 ];
 

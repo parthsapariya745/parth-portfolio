@@ -5,31 +5,31 @@ import { useContext } from "react";
 const education = [
   {
     id: 1,
-    year: "10th Grade",
-    title: "10th Standard",
-    institution: "Sarvodaya School",
-    achievement: "86PR",
-  },
-  {
-    id: 2,
-    year: "12th Grade",
-    title: "12th Standard (Commerce)",
-    institution: "Sarvodaya Commerce School",
-    achievement: "82PR",
-  },
-  {
-    id: 3,
     year: "Current",
     title: "Bachelor of Computer Applications",
     institution: "Saurashtra University",
     achievement: "BCA Degree",
   },
   {
-    id: 4,
+    id: 2,
     year: "Current",
     title: "Full Stack Development",
     institution: "Red & White Multimedia Education",
     achievement: "Professional Training",
+  },
+  {
+    id: 3,
+    year: "12th Grade",
+    title: "12th Standard (Commerce)",
+    institution: "Sarvodaya Commerce School",
+    achievement: "82PR",
+  },
+  {
+    id: 4,
+    year: "10th Grade",
+    title: "10th Standard",
+    institution: "Sarvodaya School",
+    achievement: "86PR",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Education() {
       {/* Parallax Glow */}
       <div
         className={`
-          absolute right-10 top-10 w-[32rem] h-[32rem] blur-3xl rounded-full opacity-25
+          absolute right-10 top-10 w-lg h-128 blur-3xl rounded-full opacity-25
           animate-[slowFloat_7s_ease-in-out_infinite]
           ${theme === "dark" ? "bg-purple-700/30" : "bg-indigo-400/30"}
         `}
