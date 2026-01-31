@@ -9,8 +9,8 @@ const projects = [
     id: 1,
     title: "Expense Income tracker",
     description:
-      "A fun number guessing game with responsive design and dynamic scoring based on odd–even rules.",
-    tech: ["Tailwind CSS", "JavaScript", "React JS", "Node JS", "MongoDB Atlas"],
+      "Expense & Income Tracker is a full-stack web application that helps users securely track their income and expenses. It includes authentication, category-wise tracking, interactive charts, and a responsive dashboard optimized for good performance.",
+    tech: ["Tailwind CSS", "JavaScript", "Chart.jS", "React JS", "Node JS", "Express JS", "MongoDB Atlas", "Cloudinary", "JWT"],
     demo: "https://expense-income-tracker-client.pages.dev",
     source: "https://github.com/parthsapariya745/Expense_Income_Tracker_client",
     imgPath: "/expense-income-tracker.png",
@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Number Guessing Game",
     description:
-      "A fun number guessing game with responsive design and dynamic scoring based on odd–even rules.",
+      "A fun number guessing game with responsive design and dynamic scoring based on odd-even rules.",
     tech: ["Tailwind CSS", "JavaScript", "React JS"],
     demo: "https://number-guessing-game-react-js.netlify.app",
     source: "https://github.com/parthsapariya745/Number-Guessing-game",
@@ -60,7 +60,7 @@ const projects = [
     title: "Adminpanel",
     description:
       "Admin Panel with product CRUD functionality offering smooth management and a clean, responsive UI.",
-    tech: ["HTML", "CSS", "JavaScript", "React JS", "react-router-dom", "nodeJS", "MongoDB Compass"],
+    tech: ["HTML", "CSS", "JavaScript", "React JS", "react-router-dom", "Node JS", "Express JS", "MongoDB Compass"],
     demo: "https://react-router-dom-login-signup.netlify.app",
     source: "https://github.com/parthsapariya745/login-singup-react-router-dom",
     imgPath: "/adminpanel.png",
