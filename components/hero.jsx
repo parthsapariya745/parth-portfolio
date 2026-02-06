@@ -5,7 +5,7 @@ import { useContext, useEffect, useRef } from "react";
 
 export default function Hero() {
   const { theme } = useContext(themeContext);
-  const ref = useRef(null)
+  const ref = useRef(null);
 
   useEffect(() => {
     if (!ref.current) return;
@@ -13,139 +13,148 @@ export default function Hero() {
     const roles = [
       "Full Stack Developer",
       "MERN Stack Developer",
-      "Frontend Developer"
+      "Frontend Developer",
+      "Backend Developer",
     ];
 
-    let index = 0
-    let charIndex = 0
-    let isDelete = false
+    let index = 0;
+    let charIndex = 0;
+    let isDelete = false;
 
     const typeEffect = () => {
-      const currentText = roles[index]
+      const currentText = roles[index];
 
       if (!isDelete) {
-        ref.current.textContent = currentText.slice(0, charIndex)
-        charIndex++
+        ref.current.textContent = currentText.slice(0, charIndex);
+        charIndex++;
 
         if (charIndex > currentText.length) {
-          isDelete = true
-          setTimeout(typeEffect, 1000)
-          return
+          isDelete = true;
+          setTimeout(typeEffect, 1200);
+          return;
         }
       } else {
-        ref.current.textContent = currentText.slice(0, charIndex)
-        charIndex--
+        ref.current.textContent = currentText.slice(0, charIndex);
+        charIndex--;
 
         if (charIndex < 0) {
-          isDelete = false
-          index = (index + 1) % roles.length
-          charIndex = 0
-          setTimeout(typeEffect, 200)
-          return
+          isDelete = false;
+          index = (index + 1) % roles.length;
+          charIndex = 0;
+          setTimeout(typeEffect, 300);
+          return;
         }
       }
 
-      setTimeout(typeEffect, isDelete ? 60 : 100)
-    }
+      setTimeout(typeEffect, isDelete ? 50 : 90);
+    };
 
-    typeEffect()
-  }, [])
+    typeEffect();
+  }, []);
 
   return (
     <section
       id="home"
       className={`
-        relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center overflow-hidden
-        transition-colors duration-300
+        relative min-h-screen flex items-center overflow-hidden
+        px-4 sm:px-6 lg:px-8 pt-32 pb-24
+        transition-colors duration-500
         ${theme === "dark" ? "bg-[#0E0E0E]" : "bg-[#FFF6F8]"}
       `}
     >
-      {/* Background Aura Glow */}
+      {/* Background Glow */}
       <div
         className={`
-          absolute -top-20 left-1/2 -translate-x-1/2 
-          w-[40rem] h-[40rem] rounded-full blur-3xl opacity-20
+          absolute -top-40 left-1/2 -translate-x-1/2
+          w-[45rem] h-[45rem] rounded-full blur-3xl opacity-25
+          animate-pulse
           ${theme === "dark" ? "bg-indigo-600/30" : "bg-pink-300/40"}
         `}
       />
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-[22px]">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-pretty lg:leading-[68px] sm:leading-[55px] leading-[45px]">
+        <div className="flex justify-center md:justify-start">
+          <div className="w-full space-y-7 flex flex-col items-center">
+            {/* Heading */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
               <span
                 className={`
-                  block transition-colors animate-[fadeUp_0.7s_ease-out_0.1s_both]
+                  block transition-all duration-700 text-center
                   ${theme === "light" ? "text-black" : "text-white"}
                 `}
               >
-                Hi👋, I'm
+                Hello 👋
               </span>
-
-              <span
-                className="
-                  name text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-purple-500
-                  drop-shadow-[0_4px_18px_rgba(99,102,241,0.35)]
-                  animate-[scaleReveal_0.7s_ease-out_0.25s_both]
-                "
-              >
-                Parth Sapariya
+              <span className={`${theme === "light" ? "text-black" : "text-white"}`}>
+                I'm {" "}
+                <span
+                  className="
+                    mt-2 text-transparent bg-clip-text
+                    bg-linear-to-r from-indigo-500 to-purple-500
+                    drop-shadow-[0_4px_18px_rgba(99,102,241,0.35)]
+                  "
+                >
+                  Parth Sapariya
+                </span>
               </span>
             </h1>
 
+            {/* Role */}
             <p
               className={`
-                role text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight 
-                sm:min-h-[68px] min-h-[45px] block lg:mb-3 sm:mb-0 mb-2 leading-[1.2]         
-                ${theme === "dark" ? "text-[#C7D2FE]" : "text-[#4B0082]"}
+                text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight
+                min-h-[52px] leading-tight
+                ${theme === "dark" ? "text-[#a4accc]" : "text-[#4B0082]"}
               `}
             >
-              <span ref={ref} className="typewriter"></span>
+              <span ref={ref}></span>
+              <span className="ml-1 animate-pulse">|</span>
             </p>
 
+            {/* Description */}
             <p
               className={`
-                text-lg leading-relaxed transition-colors
+                text-lg leading-relaxed max-w-2xl text-center
                 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}
               `}
             >
-              A passionate Full Stack Developer building modern, user-friendly,
-              and fully responsive web applications.
+              A passionate Full Stack Developer building modern, scalable,
+              and user-friendly web applications.
             </p>
 
             <p
               className={`
-                text-base leading-relaxed max-w-md
+                text-base leading-relaxed max-w-xl text-center
                 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}
               `}
             >
               I turn ideas into clean and functional digital products. Currently
-              learning at Red & White Multimedia to expand my full stack power.
+              learning at Red & White Multimedia to strengthen my full stack skills.
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <a
                 href="#projects"
                 className="
-                  group lg:px-8 md:px-5 px-8 py-3 rounded-lg font-medium flex items-center gap-2
-                  justify-center sm:justify-start
+                  group px-8 py-3 rounded-lg font-medium
+                  flex items-center gap-2 justify-center
                   bg-linear-to-r from-indigo-500 to-purple-500 text-white
                   shadow-lg shadow-indigo-500/30
                   transition-all duration-300
-                  hover:scale-[1.04] active:scale-[0.97]
+                  hover:scale-105 active:scale-95
                 "
               >
                 View Projects
-                <FaArrowRight className="text-xl transform group-hover:translate-x-1 transition-transform" />
+                <FaArrowRight className="text-xl group-hover:translate-x-1 transition-transform" />
               </a>
 
               <a
                 href="#contact"
                 className={`
-                  px-8 py-3 rounded-lg font-medium flex items-center gap-2
-                  justify-center sm:justify-start border transition-all
+                  px-8 py-3 rounded-lg font-medium
+                  flex items-center gap-2 justify-center
+                  border transition-all duration-300
                   ${theme === "dark"
                     ? "border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white"
                     : "border-gray-300 text-black hover:bg-gray-100"
@@ -155,23 +164,6 @@ export default function Hero() {
                 Contact Me
               </a>
             </div>
-          </div>
-
-          {/* Right Side Graphic */}
-          <div className="flex items-center justify-center">
-            <img
-              src="./myImage.jpeg"
-              className="
-                object-cover lg:h-[400px] lg:w-[400px] md:h-[340px] md:w-[340px] sm:h-[400px] sm:w-[400px] h-[260px] w-[260px] rounded-full
-                border-4 border-transparent
-                bg-clip-padding
-                shadow-[0_0_35px_rgba(255,255,255,0.35)]
-                scale-[1.02] transition-all duration-500
-                bg-linear-to-br from-indigo-500/30 to-purple-500/30
-                p-1
-              "
-              alt="my-image"
-            />
           </div>
         </div>
       </div>

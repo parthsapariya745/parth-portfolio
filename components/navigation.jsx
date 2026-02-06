@@ -51,7 +51,6 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="#home">
             <div className="flex items-center gap-1 cursor-pointer group">
               <div className="flex items-center justify-center">
                 <Image
@@ -76,7 +75,6 @@ export default function Navigation() {
                 | Parth
               </span>
             </div>
-          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
