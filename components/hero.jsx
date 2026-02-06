@@ -76,10 +76,10 @@ export default function Hero() {
         <div className="flex justify-center md:justify-start">
           <div className="w-full space-y-7 flex flex-col items-center">
             {/* Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-center">
               <span
                 className={`
-                  block transition-all duration-700 text-center
+                  block transition-all duration-700
                   ${theme === "light" ? "text-black" : "text-white"}
                 `}
               >
@@ -103,7 +103,7 @@ export default function Hero() {
             <p
               className={`
                 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight
-                min-h-[52px] leading-tight
+                min-h-[52px] leading-tight text-center
                 ${theme === "dark" ? "text-[#a4accc]" : "text-[#4B0082]"}
               `}
             >
